@@ -1,0 +1,20 @@
+Tool: SciKit Learn
+
+Training Set Accuracy: 96.97 
+Testing Set Accuracy: 91.11 
+
+Confusion Matrix: 
+[[13  0  2]
+ [ 0 15  0]
+ [ 2  0 13]]
+
+Classification Report: 
+              precision    recall  f1-score   support
+
+        Kama       0.87      0.87      0.87        15
+        Rosa       1.00      1.00      1.00        15
+    Canadian       0.87      0.87      0.87        15
+
+   micro avg       0.91      0.91      0.91        45
+   macro avg       0.91      0.91      0.91        45
+weighted avg       0.91      0.91      0.91        45
