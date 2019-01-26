@@ -4,6 +4,7 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import csv
 
+# Get train data: features_train and target_train
 with open('data/testSeeds.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     features_train = []
@@ -13,6 +14,7 @@ with open('data/testSeeds.csv') as csvfile:
         features_train.append(row_floats) # First 7 features
         target_train.append(int(row[len(row) - 1])) # Labels
 
+# Get test data: features_test and target_test
 with open('data/trainSeeds.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     features_test = []
