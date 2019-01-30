@@ -8,7 +8,7 @@ Confusion Matrix:
  [ 0 15  0]
  [ 2  0 13]]
 
-Classification Report: 
+Classification Report for Tool: 
               precision    recall  f1-score   support
 
         Kama       0.87      0.87      0.87        15

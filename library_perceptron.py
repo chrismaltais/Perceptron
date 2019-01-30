@@ -35,15 +35,22 @@ if __name__ == "__main__":
     features_test_std = sc.transform(features_test)
 
     # Create perceptron object with 40 epochs and learning rate of 0.1
-    perceptron = Perceptron(max_iter=1000, eta0=0.1)
+    perceptron = Perceptron(max_iter=1000, eta0=0.001)
 
-    # Train perceptron
-    perceptron.fit(features_train_std,target_train)
+    # Initialize training accuracy to be 0
+    training_accuracy = 0
+    
+    # Must train perceptron until model has 96% accuracy on training data
+    while(training_accuracy < 96):
+        # Train perceptron
+        perceptron.fit(features_train_std,target_train)
 
-    # Run the trained perceptron on the test wheat data
-    target_prediction = perceptron.predict(features_test_std)
+        # Run the trained perceptron on the test wheat data
+        target_prediction = perceptron.predict(features_test_std)
 
-    training_accuracy = perceptron.score(features_train_std, target_train) * 100
+        training_accuracy = perceptron.score(features_train_std, target_train) * 100
+    
+    # Test on testing data
     testing_accuracy = perceptron.score(features_test_std, target_test) * 100
 
     confusion_matrix_results = confusion_matrix(target_test, target_prediction)

@@ -1,0 +1,22 @@
+Classification Report for Tool: 
+              precision    recall  f1-score   support
+
+        Kama       0.87      0.87      0.87        15
+        Rosa       1.00      1.00      1.00        15
+    Canadian       0.87      0.87      0.87        15
+
+   micro avg       0.91      0.91      0.91        45
+   macro avg       0.91      0.91      0.91        45
+weighted avg       0.91      0.91      0.91        45
+
+Classification Report for Custom Implementation:
+              precision    recall  f1-score   support
+
+     Inavlid       0.00      0.00      0.00         0
+        Kama       0.55      0.73      0.63        15
+        Rosa       1.00      0.47      0.64        15
+    Canadian       0.69      0.60      0.64        15
+
+   micro avg       0.60      0.60      0.60        45
+   macro avg       0.56      0.45      0.48        45
+weighted avg       0.75      0.60      0.64        45
